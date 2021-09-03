@@ -1,0 +1,358 @@
+Python 3.7.3 (default, Jan 22 2021, 20:04:44) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+=========== RESTART: /home/pi/Documents/lightblue/lightbluecli.py ===========
+Card terminology:
+ACE: a
+KING: k
+QUEEN: q
+JACK: j
+JOKER: ?
+TWO: 2
+THREE: 3
+FOUR: 4
+FIVE: 5
+SIX: 6
+SEVEN: 7
+EIGHT: 8
+NINE: 9
+TEN: 10
+Suit terminology:
+HEARTS: h
+SPADES: s
+CLUBS: c
+DIAMONDS: d
+
+Ready to start, press enter to begin
+Please enter cards in hand (input blank text for type to finish)
+Type: j
+Suit: h
+Type: a
+Suit: d
+Type: 9
+Suit: s
+Type: 3
+Suit: s
+Type: q
+Suit: s
+Type: 5
+Suit: c
+Type: 7
+Suit: h
+Type: 
+
+When it is the bot's turn, press Enter (or type "lose" if it has lost), then enter the type and suit of the card on the top of the deck.
+Ready: 
+Type: j
+Suit: d
+Bot puts card Card (suit: HEARTS type: JACK) on the deck.
+Ready: 
+Type: 4
+Suit: h
+Bot puts card Card (suit: HEARTS type: SEVEN) on the deck.
+Ready: 
+Type: 2
+Suit: h
+Bot draws a card.
+Input the card's info
+Type: q
+Suit: c
+Ready: 
+Type: 5
+Suit: h
+Bot puts card Card (suit: CLUBS type: FIVE) on the deck.
+Ready: 
+Type: 5
+Suit: c
+Bot puts card Card (suit: CLUBS type: QUEEN) on the deck.
+Ready: 
+Type: q
+Suit: c
+Bot puts card Card (suit: SPADES type: QUEEN) on the deck.
+Ready: 
+Type: 6
+Suit: s
+Bot puts card Card (suit: SPADES type: NINE) on the deck.
+Ready: 
+Type: 10
+Suit: s
+Bot puts card Card (suit: SPADES type: THREE) on the deck.
+Ready: 
+Type: 3
+Suit: h
+Bot draws a card.
+Input the card's info
+Type: 9
+Suit: d
+Ready: 
+Type: 3
+Suit: d
+Bot puts card Card (suit: DIAMONDS type: ACE) on the deck.
+Ready: lose
+Bot has lost.
+Bot says: Good game, and thanks for playing.
+>>> 
+=========== RESTART: /home/pi/Documents/lightblue/lightbluecli.py ===========
+Card terminology:
+ACE: a
+KING: k
+QUEEN: q
+JACK: j
+JOKER: ?
+TWO: 2
+THREE: 3
+FOUR: 4
+FIVE: 5
+SIX: 6
+SEVEN: 7
+EIGHT: 8
+NINE: 9
+TEN: 10
+Suit terminology:
+HEARTS: h
+SPADES: s
+CLUBS: c
+DIAMONDS: d
+
+Ready to start, press enter to begin
+Please enter cards in hand (input blank text for type to finish)
+Type: 9
+Suit: d
+Type: 8
+Suit: d
+Type: 5
+Suit: s
+Type: 2
+Suit: s
+Type: 10
+Suit: c
+Type: j
+Suit: c
+Type: 5
+Suit: d
+Type: 
+
+When it is the bot's turn, press Enter (or type "lose" if it has lost), then enter the type and suit of the card on the top of the deck.
+Ready: 
+Type: 4
+Suit: h
+{'h': 0, 's': 2, 'c': 2, 'd': 2}
+Traceback (most recent call last):
+  File "/home/pi/Documents/lightblue/lightbluecli.py", line 40, in <module>
+    r = bot.play(lightblue.Card(t, s))
+  File "/home/pi/Documents/lightblue/lightblue.py", line 63, in play
+    return (PlayResults.CRAZYEIGHT, (card.suit, CardSuits({cardCount[x]:x for x in cardCount}[max(d.values())])))
+NameError: name 'd' is not defined
+>>> 
+=========== RESTART: /home/pi/Documents/lightblue/lightbluecli.py ===========
+Card terminology:
+ACE: a
+KING: k
+QUEEN: q
+JACK: j
+JOKER: ?
+TWO: 2
+THREE: 3
+FOUR: 4
+FIVE: 5
+SIX: 6
+SEVEN: 7
+EIGHT: 8
+NINE: 9
+TEN: 10
+Suit terminology:
+HEARTS: h
+SPADES: s
+CLUBS: c
+DIAMONDS: d
+
+Ready to start, press enter to begin
+Please enter cards in hand (input blank text for type to finish)
+Type: 5
+Suit: d
+Type: 9
+Suit: d
+Type: 8
+Suit: d
+Type: 5
+Suit: s
+Type: 2
+Suit: s
+Type: 10
+Suit: c
+Type: j
+Suit: c
+Type: 
+
+When it is the bot's turn, press Enter (or type "lose" if it has lost), then enter the type and suit of the card on the top of the deck.
+Ready: 4
+Type: h
+Invalid choice.
+Type: 4
+Suit: h
+{'h': 0, 's': 2, 'c': 2, 'd': 2}
+Bot plays an eight of DIAMONDS and sets the suit to DIAMONDS
+Ready: 
+Type: 7
+Suit: d
+Bot puts card Card (suit: DIAMONDS type: FIVE) on the deck.
+Ready: 
+Type: j
+Suit: d
+Bot puts card Card (suit: DIAMONDS type: NINE) on the deck.
+Ready: 
+Type: 9
+Suit: d
+Bot draws a card.
+Input the card's info
+Type: 2
+Suit: h
+Ready: 
+Type: 9
+Suit: d
+Bot draws a card.
+Input the card's info
+Type: 10
+Suit: h
+Ready: 
+Type: 9
+Suit: d
+Bot draws a card.
+Input the card's info
+Type: 6
+Suit: d
+Ready: 
+Type: 4
+Suit: d
+Bot puts card Card (suit: DIAMONDS type: SIX) on the deck.
+Ready: 
+Type: 6
+Suit: d
+Bot draws a card.
+Input the card's info
+Type: q
+Suit: c
+Ready: 
+Type: 8
+Suit: h
+Bot puts card Card (suit: HEARTS type: TWO) on the deck.
+Ready: 
+Type: 7
+Suit: h
+Bot puts card Card (suit: HEARTS type: TEN) on the deck.
+Ready: 
+Type: j
+Suit: h
+Bot puts card Card (suit: CLUBS type: JACK) on the deck.
+Ready: 
+Type: 5
+Suit: c
+Bot puts card Card (suit: SPADES type: FIVE) on the deck.
+Ready: 
+Type: 5
+Suit: h
+Bot draws a card.
+Input the card's info
+Type: q
+Suit: s
+Ready: 
+Type: k
+Suit: h
+Bot draws a card.
+Input the card's info
+Type: 6
+Suit: s
+Ready: 
+Type: k
+Suit: c
+Bot puts card Card (suit: CLUBS type: TEN) on the deck.
+Ready: 
+Type: 10
+Suit: c
+Bot puts card Card (suit: CLUBS type: QUEEN) on the deck.
+Ready: 
+Type: q
+Suit: c
+Bot puts card Card (suit: SPADES type: QUEEN) on the deck.
+Ready: 
+Type: 7
+Suit: s
+Bot puts card Card (suit: SPADES type: TWO) on the deck.
+Ready: 
+Type: 9
+Suit: s
+Bot has won!
+Bot says: Good game, and thanks for playing.
+>>> 
+=========== RESTART: /home/pi/Documents/lightblue/lightbluecli.py ===========
+Card terminology:
+ACE: a
+KING: k
+QUEEN: q
+JACK: j
+JOKER: ?
+TWO: 2
+THREE: 3
+FOUR: 4
+FIVE: 5
+SIX: 6
+SEVEN: 7
+EIGHT: 8
+NINE: 9
+TEN: 10
+Suit terminology:
+HEARTS: h
+SPADES: s
+CLUBS: c
+DIAMONDS: d
+
+Ready to start, press enter to begin
+Please enter cards in hand (input blank text for type to finish)
+Type: 4
+Suit: h
+Type: 8
+Suit: d
+Type: a
+Suit: h
+Type: 7
+Suit: d
+Type: k
+Suit: d
+Type: 4
+Suit: s
+Type: a
+Suit: s
+Type: 
+
+When it is the bot's turn, press Enter (or type "lose" if it has lost), then enter the type and suit of the card on the top of the deck.
+Ready: 
+Type: 9
+Suit: h
+Bot puts card Card (suit: HEARTS type: FOUR) on the deck.
+Ready: 
+Type: 4
+Suit: h
+Bot puts card Card (suit: HEARTS type: ACE) on the deck.
+Ready: 
+Type: a
+Suit: d
+Bot puts card Card (suit: DIAMONDS type: SEVEN) on the deck.
+Ready: 
+Type: 5
+Suit: d
+Bot puts card Card (suit: DIAMONDS type: KING) on the deck.
+Ready: 
+Type: 10
+Suit: d
+Bot plays an eight of DIAMONDS and sets the suit to SPADES
+Ready: 
+Type: k
+Suit: s
+Bot puts card Card (suit: SPADES type: FOUR) on the deck.
+Ready: 
+Type: 4
+Suit: s
+Bot has won!
+Bot says: Good game, and thanks for playing.
+>>> 
