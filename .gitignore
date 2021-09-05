@@ -1,0 +1,4 @@
+__pycache__/
+*.txt
+talkterm.py
+lightbluecli-display.py
